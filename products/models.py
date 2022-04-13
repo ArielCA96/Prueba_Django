@@ -17,7 +17,6 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     weight = models.IntegerField()
     # stock = models.IntegerField()
-    # prueba = 1
     image_url = models.CharField(max_length=2083)
     collection = models.ForeignKey(Collection, on_delete=models.PROTECT)
 
